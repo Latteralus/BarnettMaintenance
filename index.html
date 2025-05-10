@@ -3,399 +3,689 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barnett Maintenance Services - Boise, ID</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Barnett Maintenance Services, LLC | Treasure Valley's Trusted Maintenance Provider</title>
+    <meta name="description" content="Veteran owned and operated maintenance services for retail, industrial, and commercial properties across the Treasure Valley, Idaho.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
+        .hero-pattern {
+            background-color: #f9fafb;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e5e7eb' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
-        /* Smooth scrolling for anchor links */
-        html {
+        .scroll-smooth {
             scroll-behavior: smooth;
-        }
-        .hero-bg {
-            background-image: url('https://placehold.co/1920x1080/334155/E0E7FF?text=Boise+Skyline+Placeholder');
-            background-size: cover;
-            background-position: center;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        /* Custom scrollbar for a more modern feel (optional) */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #4f46e5; /* Indigo-600 */
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #4338ca; /* Indigo-700 */
-        }
-        /* Mobile menu toggle */
-        .mobile-menu {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            .desktop-menu {
-                display: none;
-            }
-            .mobile-menu {
-                display: none; /* Initially hidden, toggled by JS */
-            }
-            .mobile-menu.open {
-                display: block;
-            }
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
-
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <a href="#home" class="text-2xl font-bold text-indigo-600">
-                    Barnett Maintenance
-                </a>
-
-                <nav class="hidden md:flex space-x-8 items-center desktop-menu">
-                    <a href="#home" class="text-slate-600 hover:text-indigo-600 transition duration-150">Home</a>
-                    <a href="#services" class="text-slate-600 hover:text-indigo-600 transition duration-150">Services</a>
-                    <a href="#why-us" class="text-slate-600 hover:text-indigo-600 transition duration-150">Why Us</a>
-                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-150">Contact Us</a>
-                </nav>
-
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-slate-600 hover:text-indigo-600 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+<body class="font-sans antialiased text-gray-800 scroll-smooth">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-blue-800 font-bold text-xl">Barnett Maintenance Services</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4">
+                    <a href="#home" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-800">Home</a>
+                    <a href="#services" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-800">Services</a>
+                    <a href="#about" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-800">About Us</a>
+                    <a href="#testimonials" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-800">Testimonials</a>
+                    <a href="#contact" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-800">Contact</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="p-2 rounded-md text-gray-700 hover:text-blue-800 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
+                <div class="hidden md:flex items-center">
+                    <a href="#contact" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-800 hover:bg-blue-700">
+                        Get a Quote
+                    </a>
+                </div>
             </div>
         </div>
-        <div id="mobile-menu-items" class="mobile-menu md:hidden bg-white shadow-lg rounded-b-lg">
-            <a href="#home" class="block py-3 px-4 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Home</a>
-            <a href="#services" class="block py-3 px-4 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Services</a>
-            <a href="#why-us" class="block py-3 px-4 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Why Us</a>
-            <a href="#contact" class="block py-3 px-4 bg-indigo-600 text-white text-center hover:bg-indigo-700 transition duration-150 m-2 rounded-lg">Contact Us</a>
-        </div>
-    </header>
 
-    <main>
-        <section id="home" class="hero-bg text-white relative">
-            <div class="absolute inset-0 bg-slate-800 opacity-60"></div>
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-48 text-center relative z-10">
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                    Barnett Maintenance Services
-                </h1>
-                <p class="text-lg sm:text-xl md:text-2xl mb-4 text-slate-200 max-w-3xl mx-auto">
-                    Your Trusted Partner for Property Maintenance in Boise, Idaho.
-                    <br class="hidden sm:block">Servicing Retail, Industrial, Commercial Properties & Minor Residential Repairs.
-                </p>
-                <p class="text-md sm:text-lg md:text-xl mb-8 text-indigo-300 font-semibold max-w-3xl mx-auto">
-                    Proudly a Veteran Owned Business.
-                </p>
-                <a href="#contact" class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg text-lg transition duration-150 shadow-lg hover:shadow-xl transform hover:scale-105">
-                    Get a Free Quote
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-800 hover:bg-gray-50">Home</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-800 hover:bg-gray-50">Services</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-800 hover:bg-gray-50">About Us</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-800 hover:bg-gray-50">Testimonials</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-800 hover:bg-gray-50">Contact</a>
+                <a href="#contact" class="block w-full text-center mt-4 px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-800 hover:bg-blue-700">
+                    Get a Quote
                 </a>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section id="services" class="py-16 md:py-24 bg-slate-100">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12 md:mb-16">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-indigo-600 mb-4">Our Comprehensive Maintenance Solutions</h2>
-                    <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-                        We offer a wide array of services tailored to meet the specific needs of your property.
-                    </p>
+    <!-- Hero Section -->
+    <section id="home" class="bg-blue-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="inline-block px-3 py-1 text-sm font-semibold bg-blue-900 rounded-full mb-4">
+                        Veteran Owned & Operated
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Professional Maintenance Services in Treasure Valley</h1>
+                    <p class="text-lg mb-8">Reliable maintenance solutions for retail, industrial, and commercial properties, plus select residential services.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-800 bg-white hover:bg-gray-100">
+                            Request Service
+                        </a>
+                        <a href="#services" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-700 hover:bg-blue-600">
+                            Explore Services
+                        </a>
+                    </div>
                 </div>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white p-6 rounded-xl shadow-lg service-card transition-all duration-300 ease-in-out">
-                        <div class="text-indigo-500 mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-slate-700 mb-2 text-center">Commercial Properties</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed text-center">
-                            General repairs, preventative maintenance, HVAC, plumbing, and electrical services for office buildings, and business complexes.
-                        </p>
+                <div class="hidden md:block">
+                    <img src="/api/placeholder/600/400" alt="Maintenance professionals at work" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="inline-block p-3 bg-blue-100 rounded-full mb-4">
+                        <i class="fas fa-medal text-blue-800 text-xl"></i>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-lg service-card transition-all duration-300 ease-in-out">
-                        <div class="text-indigo-500 mb-4">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-slate-700 mb-2 text-center">Industrial Facilities</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed text-center">
-                            Equipment upkeep, facility maintenance, safety compliance checks, and specialized repairs for industrial sites.
-                        </p>
+                    <h3 class="text-xl font-semibold mb-2">Veteran Owned</h3>
+                    <p class="text-gray-600">Bringing military precision, reliability, and work ethic to every project we undertake.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="inline-block p-3 bg-blue-100 rounded-full mb-4">
+                        <i class="fas fa-tools text-blue-800 text-xl"></i>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-lg service-card transition-all duration-300 ease-in-out">
-                        <div class="text-indigo-500 mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-slate-700 mb-2 text-center">Retail Spaces</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed text-center">
-                            Storefront repairs, lighting solutions, fixture installations, emergency call-outs, and ongoing maintenance for shops.
-                        </p>
+                    <h3 class="text-xl font-semibold mb-2">Professional Expertise</h3>
+                    <p class="text-gray-600">Skilled technicians with extensive experience across various maintenance disciplines.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="inline-block p-3 bg-blue-100 rounded-full mb-4">
+                        <i class="fas fa-map-marker-alt text-blue-800 text-xl"></i>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-lg service-card transition-all duration-300 ease-in-out">
-                        <div class="text-indigo-500 mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-slate-700 mb-2 text-center">Minor Residential Repairs</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed text-center">
-                            Reliable handyman services, minor plumbing and electrical fixes, small renovations, and general home repairs.
-                        </p>
+                    <h3 class="text-xl font-semibold mb-2">Locally Operated</h3>
+                    <p class="text-gray-600">Proudly serving Boise and the greater Treasure Valley with responsive, personalized service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Comprehensive Services</h2>
+                <p class="max-w-2xl mx-auto text-lg text-gray-600">Tailored maintenance solutions for retail, industrial, commercial, and residential properties.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Retail Services -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 bg-gray-200">
+                        <img src="/api/placeholder/400/200" alt="Retail maintenance services" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Retail Maintenance</h3>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Store fixture repairs and installations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Lighting maintenance and upgrades</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Display assembly and installation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>General repairs and maintenance</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Industrial Services -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 bg-gray-200">
+                        <img src="/api/placeholder/400/200" alt="Industrial maintenance services" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Industrial Maintenance</h3>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Equipment maintenance and repair</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Facility upkeep and preventative maintenance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Safety compliance improvements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Infrastructure repairs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Commercial Services -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 bg-gray-200">
+                        <img src="/api/placeholder/400/200" alt="Commercial maintenance services" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Commercial Maintenance</h3>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Office space renovations and repairs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>HVAC service and maintenance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Plumbing and electrical work</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Property management services</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Residential Services -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 bg-gray-200">
+                        <img src="/api/placeholder/400/200" alt="Residential maintenance services" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Residential Services</h3>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Minor home repairs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Fixture installation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>General handyman services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Small renovation projects</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Preventative Maintenance -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 bg-gray-200">
+                        <img src="/api/placeholder/400/200" alt="Preventative maintenance services" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Preventative Maintenance</h3>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Scheduled maintenance programs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Seasonal property inspections</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Equipment testing and servicing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Maintenance planning and documentation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Emergency Services -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <div class="h-48 bg-gray-200">
+                        <img src="/api/placeholder/400/200" alt="Emergency maintenance services" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Emergency Services</h3>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>24/7 emergency response</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Rapid assessment and repairs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Water damage mitigation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-800 mt-1 mr-2"></i>
+                                <span>Temporary solutions implementation</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="why-us" class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12 md:mb-16">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-indigo-600 mb-4">Why Partner with Barnett Maintenance?</h2>
-                    <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-                        Experience the difference with a maintenance provider that truly cares.
-                    </p>
+            <div class="mt-12 text-center">
+                <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-800 hover:bg-blue-700">
+                    Request a Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="/api/placeholder/600/400" alt="Barnett Maintenance Services team" class="rounded-lg shadow-lg">
                 </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg shadow">
-                        <div class="flex-shrink-0 text-indigo-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-slate-700 mb-1">Local Boise Expertise</h3>
-                            <p class="text-slate-500">Deep understanding of local needs and regulations in Boise, Idaho.</p>
+                <div>
+                    <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 mb-4">
+                        <i class="fas fa-star mr-1"></i>
+                        Veteran Owned & Operated
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">About Barnett Maintenance Services</h2>
+                    <p class="text-lg text-gray-600 mb-6">Founded with a commitment to excellence and integrity, Barnett Maintenance Services brings military-grade precision and reliability to property maintenance across the Treasure Valley.</p>
+                    <p class="text-lg text-gray-600 mb-6">Our team consists of skilled professionals with extensive experience in all aspects of commercial, industrial, and retail maintenance. We pride ourselves on our attention to detail, prompt service, and ability to solve complex maintenance challenges efficiently.</p>
+                    <div class="border-t border-gray-200 pt-6 mt-6">
+                        <h3 class="text-xl font-semibold mb-4">Why Choose Us?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-800 mt-1 mr-2"></i>
+                                <span>Veteran owned and operated with military-grade precision</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-800 mt-1 mr-2"></i>
+                                <span>Licensed, insured, and professionally trained technicians</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-800 mt-1 mr-2"></i>
+                                <span>Serving the entire Treasure Valley region</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-800 mt-1 mr-2"></i>
+                                <span>Customized maintenance solutions for your specific needs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-800 mt-1 mr-2"></i>
+                                <span>Transparent pricing with no hidden fees</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="max-w-2xl mx-auto text-lg text-gray-600">Our commitment to excellence is reflected in the satisfaction of our clients.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <div class="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg shadow">
-                        <div class="flex-shrink-0 text-indigo-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <p class="text-gray-600 italic mb-4">"Barnett Maintenance Services has been handling all our retail location repairs for over a year now. Their response time is exceptional, and the quality of work is consistently excellent. Having a veteran-owned business take care of our stores gives us peace of mind."</p>
+                    <div class="flex items-center">
+                        <div class="mr-4 flex-shrink-0 rounded-full bg-gray-200 h-12 w-12 flex items-center justify-center">
+                            <span class="text-gray-500 font-medium">JM</span>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-slate-700 mb-1">Reliable & Timely</h3>
-                            <p class="text-slate-500">We respect your time. Count on us for prompt service and efficient solutions.</p>
+                            <h4 class="font-medium">John Morrison</h4>
+                            <p class="text-sm text-gray-500">Regional Manager, Idaho Retail Chain</p>
                         </div>
                     </div>
-                    <div class="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg shadow">
-                        <div class="flex-shrink-0 text-indigo-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-slate-700 mb-1">Quality Workmanship</h3>
-                            <p class="text-slate-500">Skilled professionals delivering lasting repairs and maintenance.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg shadow">
-                        <div class="flex-shrink-0 text-indigo-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-slate-700 mb-1">Customer Focused</h3>
-                            <p class="text-slate-500">Tailored services to meet your specific needs and budget.</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
-                     <div class="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg shadow">
-                        <div class="flex-shrink-0 text-indigo-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
+                    <p class="text-gray-600 italic mb-4">"When our warehouse needed significant repairs and maintenance updates, Barnett came through with flying colors. They worked around our schedule to minimize disruption and completed everything to code and on budget. Highly recommend their industrial maintenance services."</p>
+                    <div class="flex items-center">
+                        <div class="mr-4 flex-shrink-0 rounded-full bg-gray-200 h-12 w-12 flex items-center justify-center">
+                            <span class="text-gray-500 font-medium">SL</span>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-slate-700 mb-1">Comprehensive Services</h3>
-                            <p class="text-slate-500">Your one-stop solution for a wide range of maintenance needs.</p>
+                            <h4 class="font-medium">Sarah Lewis</h4>
+                            <p class="text-sm text-gray-500">Operations Director, Boise Manufacturing</p>
                         </div>
                     </div>
-                     <div class="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg shadow">
-                        <div class="flex-shrink-0 text-indigo-500">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-slate-700 mb-1">Transparent Pricing</h3>
-                            <p class="text-slate-500">Honest, upfront estimates with no hidden fees. Get a free quote today!</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                         </div>
                     </div>
-                    <div class="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg shadow">
-                        <div class="flex-shrink-0 text-indigo-500">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6.75 6.75 0 006.75-6.75H5.25A6.75 6.75 0 0012 18.75z" transform="translate(0 -1)" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v.01" />
-                            </svg>
+                    <p class="text-gray-600 italic mb-4">"We've been using Barnett's preventative maintenance program for our office building, and it's been a game-changer. Their attention to detail has prevented several potentially major issues, and their team is always professional and courteous. The military background shows in their precision and reliability."</p>
+                    <div class="flex items-center">
+                        <div class="mr-4 flex-shrink-0 rounded-full bg-gray-200 h-12 w-12 flex items-center justify-center">
+                            <span class="text-gray-500 font-medium">RP</span>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-slate-700 mb-1">Veteran Owned & Operated</h3>
-                            <p class="text-slate-500">Proudly supporting our community with discipline and integrity.</p>
+                            <h4 class="font-medium">Robert Patel</h4>
+                            <p class="text-sm text-gray-500">Property Manager, Treasure Valley Office Complex</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="py-16 md:py-24 bg-indigo-700 text-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12 md:mb-16">
-                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Get in Touch</h2>
-                    <p class="text-lg text-indigo-200 max-w-xl mx-auto">
-                        Ready to discuss your maintenance needs? Contact us today for a free, no-obligation quote.
-                    </p>
+    <!-- CTA Section -->
+    <section class="bg-blue-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Experience Top-Tier Maintenance Service?</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Whether you need regular maintenance, emergency repairs, or a specialized service, our team is ready to provide solutions tailored to your needs.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-800 bg-white hover:bg-gray-100">
+                        Contact Us Today
+                    </a>
+                    <a href="tel:+12083456789" class="inline-flex items-center justify-center px-5 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-blue-700">
+                        <i class="fas fa-phone mr-2"></i> Call for Immediate Service
+                    </a>
                 </div>
-                <div class="max-w-4xl mx-auto bg-white text-slate-800 p-8 sm:p-10 md:p-12 rounded-xl shadow-2xl">
-                    <div class="grid md:grid-cols-2 gap-8 md:gap-12">
-                        <form action="#" method="POST"> <div class="space-y-6">
-                                <div>
-                                    <label for="name" class="block text-sm font-medium text-slate-700">Full Name</label>
-                                    <input type="text" name="name" id="name" autocomplete="name" required
-                                           class="mt-1 block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                           placeholder="John Doe">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                <p class="max-w-2xl mx-auto text-lg text-gray-600">Have questions or ready to schedule service? Contact our team today.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                <input type="text" name="first-name" id="first-name" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                <input type="text" name="last-name" id="last-name" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company/Organization</label>
+                            <input type="text" name="company" id="company" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" name="email" id="email" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                            <input type="tel" name="phone" id="phone" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4">
+                        </div>
+                        <div>
+                            <label for="service-type" class="block text-sm font-medium text-gray-700 mb-1">Service Needed</label>
+                            <select id="service-type" name="service-type" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4">
+                                <option value="">Select a service</option>
+                                <option value="retail">Retail Maintenance</option>
+                                <option value="industrial">Industrial Maintenance</option>
+                                <option value="commercial">Commercial Maintenance</option>
+                                <option value="residential">Residential Repairs</option>
+                                <option value="preventative">Preventative Maintenance</option>
+                                <option value="emergency">Emergency Services</option>
+                                <option value="other">Other (please specify)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Project Details</label>
+                            <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4" placeholder="Please describe your maintenance needs"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-800 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Submit Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div>
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-blue-800 mt-1"></i>
                                 </div>
-                                <div>
-                                    <label for="email" class="block text-sm font-medium text-slate-700">Email Address</label>
-                                    <input type="email" name="email" id="email" autocomplete="email" required
-                                           class="mt-1 block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                           placeholder="you@example.com">
-                                </div>
-                                <div>
-                                    <label for="phone" class="block text-sm font-medium text-slate-700">Phone Number</label>
-                                    <input type="tel" name="phone" id="phone" autocomplete="tel"
-                                           class="mt-1 block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                           placeholder="(208) 555-1234">
-                                </div>
-                                <div>
-                                    <label for="service_type" class="block text-sm font-medium text-slate-700">Service Type</label>
-                                    <select id="service_type" name="service_type" class="mt-1 block w-full px-3 py-2 border border-slate-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                        <option>Commercial Maintenance</option>
-                                        <option>Industrial Maintenance</option>
-                                        <option>Retail Space Repair</option>
-                                        <option>Residential Repair</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
-                                    <textarea id="message" name="message" rows="4" required
-                                              class="mt-1 block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                              placeholder="Briefly describe your maintenance needs..."></textarea>
-                                </div>
-                                <div>
-                                    <button type="submit"
-                                            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150">
-                                        Send Message
-                                    </button>
-                                    <p class="mt-2 text-xs text-slate-500 text-center">
-                                        Note: This form is for demonstration. For inquiries, please use the contact details provided.
+                                <div class="ml-3">
+                                    <p class="text-gray-700">
+                                        Barnett Maintenance Services, LLC<br>
+                                        Boise, Idaho<br>
+                                        Serving the entire Treasure Valley
                                     </p>
                                 </div>
                             </div>
-                        </form>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-phone-alt text-blue-800 mt-1"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-gray-700">(208) 345-6789</p>
+                                    <p class="text-sm text-gray-500">Monday-Friday, 7am-7pm</p>
+                                    <p class="text-sm text-gray-500">24/7 Emergency Service Available</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-envelope text-blue-800 mt-1"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-gray-700">info@barnettmaintenance.com</p>
+                                    <p class="text-sm text-gray-500">Email us for quotes & information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="space-y-6">
-                            <div>
-                                <h3 class="text-xl font-semibold text-slate-700 mb-3">Direct Contact</h3>
-                                <p class="text-slate-600 flex items-center mb-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
-                                    Phone: <a href="tel:+12085550100" class="ml-1 text-indigo-600 hover:underline">(208) 555-0100</a> (Your Number Here)
-                                </p>
-                                <p class="text-slate-600 flex items-center mb-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
-                                    Email: <a href="mailto:info@barnettmaintenance.com" class="ml-1 text-indigo-600 hover:underline">info@barnettmaintenance.com</a>
-                                </p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Service Area</h3>
+                        <p class="text-gray-700 mb-4">
+                            We proudly serve commercial, industrial, and retail clients throughout the Treasure Valley, including:
+                        </p>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-800 mr-2"></i>
+                                <span>Boise</span>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-slate-700 mb-3">Service Area</h3>
-                                <p class="text-slate-600 flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
-                                    Boise, Idaho and surrounding communities.
-                                </p>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-800 mr-2"></i>
+                                <span>Meridian</span>
                             </div>
-                            <div class="mt-6">
-                                <h3 class="text-xl font-semibold text-slate-700 mb-3">Business Hours</h3>
-                                <p class="text-slate-600">Monday - Friday: 8:00 AM - 5:00 PM</p>
-                                <p class="text-slate-600">Saturday: By Appointment</p>
-                                <p class="text-slate-600">Sunday: Closed (Emergency services may be available)</p>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-800 mr-2"></i>
+                                <span>Nampa</span>
                             </div>
-                             <div class="mt-6 rounded-lg overflow-hidden shadow-md">
-                                <img src="https://placehold.co/600x300/A5B4FC/FFFFFF?text=Map+of+Boise+Service+Area" alt="Map of Boise Service Area" class="w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x300/A5B4FC/FFFFFF?text=Map+Error';">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-800 mr-2"></i>
+                                <span>Caldwell</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-800 mr-2"></i>
+                                <span>Eagle</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-800 mr-2"></i>
+                                <span>Star</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-800 mr-2"></i>
+                                <span>Kuna</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-800 mr-2"></i>
+                                <span>Garden City</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="bg-slate-800 text-slate-300 py-12">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <h4 class="text-xl font-semibold text-white mb-3">Barnett Maintenance</h4>
-                    <p class="text-sm">Providing reliable maintenance solutions in Boise, ID. Proudly Veteran Owned & Operated. We are committed to quality and customer satisfaction.</p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-xl font-bold mb-4">Barnett Maintenance Services, LLC</div>
+                    <p class="text-gray-300 mb-4">Veteran owned and operated maintenance services for retail, industrial, and commercial properties across the Treasure Valley, Idaho.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#home" class="hover:text-indigo-400 transition duration-150">Home</a></li>
-                        <li><a href="#services" class="hover:text-indigo-400 transition duration-150">Services</a></li>
-                        <li><a href="#why-us" class="hover:text-indigo-400 transition duration-150">Why Us</a></li>
-                        <li><a href="#contact" class="hover:text-indigo-400 transition duration-150">Contact Us</a></li>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-300 hover:text-white">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-3">Contact Info</h4>
-                    <address class="text-sm not-italic">
-                        Barnett Maintenance Services<br>
-                        Boise, Idaho, USA<br>
-                        Phone: <a href="tel:+12085550100" class="hover:text-indigo-400 transition duration-150">(208) 555-0100</a><br>
-                        Email: <a href="mailto:info@barnettmaintenance.com" class="hover:text-indigo-400 transition duration-150">info@barnettmaintenance.com</a>
-                    </address>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-300 hover:text-white">Retail Maintenance</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white">Industrial Maintenance</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white">Commercial Maintenance</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white">Residential Repairs</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white">Preventative Maintenance</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="border-t border-slate-700 pt-8 text-center text-sm">
-                <p>&copy; <span id="currentYear"></span> Barnett Maintenance Services. All Rights Reserved.</p>
-                <p class="mt-1">
-                    <a href="#" class="hover:text-indigo-400 transition duration-150">Privacy Policy</a> |
-                    <a href="#" class="hover:text-indigo-400 transition duration-150">Terms of Service</a>
-                </p>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-300">&copy; 2025 Barnett Maintenance Services, LLC. All rights reserved.</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="/api/placeholder/50/50" alt="Veteran Owned Business" class="h-8 w-auto mr-2">
+                    <span class="text-sm text-gray-300">Proud to be Veteran Owned & Operated</span>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
         // Mobile menu toggle
-        const menuButton = document.getElementById('mobile-menu-button');
-        const menuItems = document.getElementById('mobile-menu-items');
-        menuButton.addEventListener('click', () => {
-            menuItems.classList.toggle('open');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu when a link is clicked
-        const mobileNavLinks = menuItems.querySelectorAll('a');
-        mobileNavLinks.forEach(link => {
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
             link.addEventListener('click', () => {
-                if (menuItems.classList.contains('open')) {
-                    menuItems.classList.remove('open');
-                }
+                mobileMenu.classList.add('hidden');
             });
         });
 
-        // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        // Form submission handler
+        const contactForm = document.querySelector('#contact form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Normally you would send this data to your server
+                alert('Thank you for your message. We will contact you shortly!');
+                contactForm.reset();
+            });
+        }
 
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80, // Adjust for fixed header
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
     </script>
-
 </body>
 </html>
